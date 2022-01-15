@@ -3,9 +3,9 @@ package Raphael.Mulenda;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+        // write your code here
 
-        Wall wall1 = new Wall("West");
+      /*  Wall wall1 = new Wall("West");
         Wall wall2 = new Wall("East");
         Wall wall3 = new Wall("South");
         Wall wall4 = new Wall("North");
@@ -19,5 +19,15 @@ public class Main {
 
         bedroom.MakeBed();
         bedroom.getLamp().turnOn();
+    }*/
+        Car car = new Car(8, "Base Car");
+        System.out.println(car.startEngine());
+        System.out.println(car.accelerate());
+        System.out.println(car.brake());
+
+        Mitsubishi mitsubishi = new Mitsubishi(6,"Outlander WD4");
+        System.out.println(mitsubishi.startEngine());
+        System.out.println(mitsubishi.accelerate());
+        System.out.println(mitsubishi.brake());
     }
 }
